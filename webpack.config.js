@@ -1,4 +1,3 @@
-var folder = 'build'
 var webpack = require("webpack");
 
 module.exports = {
@@ -9,7 +8,7 @@ module.exports = {
         "khangpv-datatable": __dirname + '/reapp/datatable/index',
     },
     output: {
-        path: __dirname + '/build/' + folder,
+        path: __dirname + '/build/',
         filename: '[name].js'
         // libraryTarget: 'var',
         // library: 'UYLIX'

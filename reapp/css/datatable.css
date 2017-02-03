@@ -1,0 +1,90 @@
+.nowarp {
+    white-space: nowrap !important;
+}
+.table-wrapper th {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+    font-size: 12px;
+    vertical-align: text-top !important;
+    white-space: nowrap;
+}
+
+.table td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    white-space: pre-wrap;
+}
+.table-wrapper th:hover,
+.choose-filter td[type="brand_name"]:hover,
+.choose-filter td[type="store"]:hover,
+.choose-filter td[type="gender"]:hover,
+.choose-filter td[type="status"]:hover,
+.choose-filter td[type="title"]:hover {
+    color: #fff !important;
+    background-color: #8cc152 !important;
+    border-color: #8cc152 !important;
+    cursor: pointer !important;
+}
+#filter span.label {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    position: relative !important;
+    margin-right: 5px;
+    display: inline-block;
+}
+#filter span.label.jamja-close {
+    padding-right: 20px !important;
+    margin-right: 5px;
+    cursor: pointer;
+}
+#filter span.label.jamja-close:before {
+    content: "\d7";
+    position: absolute;
+    width: 15px;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+#filter {
+    margin-bottom: 10px;
+}
+.jamja-table-overlay {
+    position: fixed;
+    z-index: 9999;
+    font-size: 40px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+}
+.jamja-hidden {display: none !important;}
+.truncate-by-height {
+    max-height: 115px !important;
+    display: inline-block;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+#filter-by-time {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.loadding {
+    width: 200px;
+    height: 100px;
+    background: white;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 100px);
+    border-radius: 6px;
+    border: 1px solid rgba(75, 75, 75, 0.91);
+    box-shadow: 1px 1px 0px rgba(0,0,0,0.7);
+}
