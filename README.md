@@ -2,8 +2,12 @@
     - _NodeJS_
     
 **Install**
-    - cd to project path
-    - npm install
+    
+>    - cd to project path
+>    
+>    - npm install
     
 **Build**
     - webpack
+    
+contact: vkphambn@gmail.com
