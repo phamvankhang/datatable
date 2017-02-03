@@ -22,7 +22,7 @@
         th: {
             'brand_name': {text: 'Brand', filter: false},
             'store': {text: 'Store', filter: false},
-            'title': {text: 'Compaign', filter: false},
+            'title': {text: 'Campaign', filter: false},
             'code': {text: 'Code', filter: false},
             'user_name': {text: 'Customer', filter: false},
             'gender': {text: 'Gender', filter: false},
