@@ -12,7 +12,9 @@
     
     
 **Usage**
-    for example:
+
+- for example:
+    
     `
     var container = $('#redeem-list').get(0)
     initTable(container, {
