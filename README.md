@@ -8,6 +8,6 @@
 >    - npm install
     
 **Build**
-    - webpack
+>    - webpack
     
 contact: vkphambn@gmail.com
