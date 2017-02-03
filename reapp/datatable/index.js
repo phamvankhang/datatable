@@ -152,6 +152,7 @@ class CouponList extends Element {
 	getData() {
         this.refs.overlay.setState({show: true})
         this.serverRequest = $.get(this.link, function (result) {
+            console.log(result)
             if ( typeof result.data !== 'undefined' ) {
                 if (_.isEmpty(result.data))
                     result.data = [{}]
@@ -159,6 +160,7 @@ class CouponList extends Element {
                 pagination.total = typeof result.total_count !== 'undefined' ? parseInt(result.total_count) : 50
                 let totalSuccess = result.success_redeem_count || 0
                 let totalreject = result.rejected_redeem_count || 0
+                console.log(result)
                 this.setState({
                     sucess: totalSuccess,
                     reject: totalreject,
@@ -179,6 +181,7 @@ class CouponList extends Element {
 
     componentDidMount(){
         this.getData()
+        console.log('didmount')
     }
 
 	get events() {

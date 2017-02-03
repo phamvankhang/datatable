@@ -88,7 +88,7 @@ class TR extends Element {
     }
 
     render() {
-        return _.isUndefined(this.props.brand_id) ? null : <tr className={this.className}>
+        return <tr className={this.className}>
             {
                 _.map(this.props.th, (value, key) => {
                     let props = {value: this.props[key], type: key}

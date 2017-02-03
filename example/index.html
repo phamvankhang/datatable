@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+
+    <link rel="stylesheet" type="text/css" href="../vendors/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../vendors/fontawesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../reapp/css/datatable.css"/>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+</head>
+<body>
+    <div id="redeem-list"></div>
+
+    <script src="../build/khangpv-datatable.js"></script>
+    <script>
+        var container = $('#redeem-list').get(0)
+        initTable(container, {
+
+            url: 'data.json',
+            config: {
+                filter: ['name', 'email']//
+            },
+            order: {
+                by: 'name',
+                type: 'DESC'
+            },
+            th: {
+                'name': {text: 'Tên', filter: true},
+                'email': {text: 'Email', filter: true}
+            }
+        })
+
+    </script>
+</body>
+</html>
